@@ -1,0 +1,13 @@
+{
+	"name": "Curso online de diseño UI/UX",
+	"duration": "12 semanas",
+	"experts": [
+		{
+			"id": 1,
+			"name": "Leanne Graham",
+			"position": "UX Designer",
+			"companyLogo": "",
+			"profilePicture": ""
+		}
+	]
+}

@@ -1,0 +1,43 @@
+.button,
+[class^='button-'] {
+	$btn-font: 16px;
+
+	align-items: center;
+	background: transparent !important;
+	border: 1px solid $dark;
+	color: $dark !important;
+	cursor: pointer;
+	display: inline-flex;
+	font-family: $main-font-bold;
+	font-size: $btn-font;
+	height: 2.75rem;
+	justify-content: center;
+	padding: 0 1.5rem;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 0.1rem;
+	font-weight: bold;
+	transition: all 0.3s;
+	white-space: nowrap;
+	word-break: keep-all;
+
+	&[class*='--invert'] {
+		border: 1px solid $light;
+		color: $light !important;
+	}
+
+	&:hover {
+		opacity: 0.8;
+	}
+
+	@each $name, $hex in $colors {
+		&[class*='--#{$name}'] {
+			background: $hex !important;
+
+			&:hover {
+				background: rgba($hex, 0.7);
+			}
+		}
+	}
+} /* .button */

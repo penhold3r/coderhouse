@@ -1,0 +1,87 @@
+.hero-section {
+	background: $secondary-color;
+	height: 600px;
+	height: clamp(600px, 70vh, 900px);
+
+	.hero {
+		background: url('../images/coderhouse-hero-illus.svg') no-repeat right center / contain;
+		display: flex;
+		height: 100%;
+		padding: 2rem 1rem;
+		margin: 0 auto;
+		max-width: $max-width;
+		width: 100%;
+
+		&__content {
+			margin: auto auto auto 0;
+			width: 60%;
+
+			@include tablet {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				width: 100%;
+			}
+		} /* __content */
+
+		&__title {
+			@extend .heading-text;
+
+			font-size: 3rem;
+			font-size: clamp(2rem, 5vw, 3.25rem);
+		} /* __title */
+
+		&__lead {
+			margin: 0 0 1.5rem;
+			font-size: 1.75rem;
+
+			@include tablet {
+				font-size: 1.25rem;
+				text-align: center;
+			}
+		} /* __lead */
+
+		&__btns {
+			display: flex;
+			gap: 1.5rem;
+			margin: 2rem 0;
+
+			@include tablet {
+				flex-direction: column;
+				align-items: center;
+			}
+
+			.cta {
+				text-align: center;
+				width: min-content;
+
+				span {
+					display: inline-block;
+					margin-top: 0.5rem;
+				}
+			} /* .cta */
+
+			.check-dates {
+				align-items: center;
+				color: $dark;
+				display: flex;
+				height: 2.5rem;
+				text-decoration: none;
+				transition: 0.3s;
+
+				span {
+					font-family: $main-font-bold;
+					font-weight: bold;
+				}
+
+				&:hover {
+					opacity: 0.7;
+				}
+			} /* .check-dates */
+
+			.icon {
+				margin-right: 0.5rem;
+			}
+		} /* __btn */
+	} /* .hero */
+} /* .hero-section */

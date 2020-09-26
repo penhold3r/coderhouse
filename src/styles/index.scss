@@ -1,0 +1,36 @@
+/******************************************************
+*                  DEPENDENCIES
+******************************************************/
+
+@import './includes/*.scss';
+@import './utils/*.scss';
+
+/******************************************************
+*                  GLOBAL STYLES
+******************************************************/
+
+html,
+body {
+	margin: 0;
+	scroll-behavior: smooth;
+
+	@include firefox {
+		font-size: 85%;
+	}
+
+	@include scrollbars(10px, $primary-color, $dark);
+}
+
+body {
+	background: #eee;
+	color: $dark;
+	font-family: $main-font;
+	font-weight: 200;
+	line-height: 1.2;
+} // body
+
+/******************************************************
+*                    MODULES
+******************************************************/
+
+@import './components/*.scss';

@@ -1,0 +1,27 @@
+$primary-color: #e0ff00;
+$secondary-color: #ef89d2;
+$accent-color: #3cefab;
+
+$dark: #121212;
+$light: #f1f1f1;
+
+$max-width: 1200px;
+
+$main-font: 'Helvetica Light', 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue',
+	Helvetica, Arial, 'Lucida Grande', sans-serif;
+
+$main-font-bold: 'Helvetica Bold', 'HelveticaNeue-Bold', 'Helvetica Neue Bold', 'Helvetica Neue',
+	Helvetica, Arial, 'Lucida Grande', sans-serif;
+
+$header-font: 'gobold_bolditalic', 'Helvetica Bold', 'HelveticaNeue-Bold', 'Helvetica Neue Bold',
+	'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+$title-font: 'gobold_italic', 'Helvetica Bold', 'HelveticaNeue-Bold', 'Helvetica Neue Bold',
+	'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+
+$colors: (
+	primary: $primary-color,
+	secondary: $secondary-color,
+	accent: $accent-color,
+	light: $light,
+	dark: $dark,
+);

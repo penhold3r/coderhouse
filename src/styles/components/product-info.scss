@@ -1,0 +1,34 @@
+.info-section {
+	position: relative;
+	z-index: 9;
+
+	.product-info {
+		background: $primary-color;
+		display: flex;
+		margin: 0 auto;
+		max-width: 800px;
+		padding: 1.5rem;
+		transform: translateY(-50%);
+		width: 90%;
+
+		.info-detail {
+			align-items: center;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			width: 100%;
+
+			.icon {
+				color: $dark;
+				font-size: 2rem;
+				margin: auto auto 1rem;
+			}
+
+			h4 {
+				color: $dark;
+				font-size: 1.25rem;
+				margin: 0;
+			}
+		} /* .info-detail */
+	} /* .product-info */
+} /* .info-section */
