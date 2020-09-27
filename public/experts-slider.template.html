@@ -1,3 +1,7 @@
-<div class="experts-slider">
-	<h4>Expertos que avalan este curso</h4>
+<h4 class="experts-subtitle">Expertos que avalan este curso</h4>
+
+<div class="slider">
+	<div class="expert-card" ng-repeat="expert in experts">
+		<h5>{{expert.name}}</h5>
+	</div>
 </div>

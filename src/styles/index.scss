@@ -22,12 +22,27 @@ body {
 }
 
 body {
-	background: #eee;
 	color: $dark;
 	font-family: $main-font;
 	font-weight: 200;
-	line-height: 1.2;
+	line-height: 1.5;
 } // body
+
+.bottom-texture {
+	margin-bottom: 2.5rem;
+	position: relative;
+
+	&:after {
+		content: '';
+		background: $secondary-color url('../images/coderhouse-texture-cloud.jpg') no-repeat center /
+			cover;
+		bottom: -2.5rem;
+		height: 2.5rem;
+		left: 0;
+		position: absolute;
+		width: 100%;
+	}
+} /* .bottom-texture */
 
 /******************************************************
 *                    MODULES

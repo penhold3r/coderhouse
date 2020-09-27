@@ -1,7 +1,8 @@
 const AppController = [
 	'$scope',
+	'$rootScope',
 	'$http',
-	async ($scope, $http) => {
+	async ($scope, $rootScope, $http) => {
 		$scope.lang = 'es'
 		$scope.title = 'CoderHouse'
 
@@ -10,7 +11,7 @@ const AppController = [
 			const { data } = await $http.get('data/product.json')
 
 			$scope.description = data.description
-			$scope.product = data
+			$rootScope.product = data
 		} catch (error) {
 			console.error('no product')
 		}

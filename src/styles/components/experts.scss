@@ -1,33 +1,73 @@
 .experts-section {
+	padding: 1rem 0 3rem;
 	position: relative;
 
 	.experts {
 		display: flex;
 		gap: 1.5rem;
+		justify-content: center;
 
 		&__container {
 			background: $light;
 			display: flex;
 			justify-content: flex-end;
-			padding: 1.5rem 1.5rem 1.5rem 1rem;
+			padding: 2rem 2rem 2rem 1rem;
+			width: 50%;
 		} /* __container */
 
 		&__info {
-			width: calc($max-width / 2);
+			width: calc(#{$max-width} / 2);
 		} /* __info */
 
 		.hash {
 			@extend .display-title;
 
 			background: $secondary-color;
+			display: inline-block;
 			font-size: 1.25rem;
-			padding: 0.25rem 1rem;
+			padding: 0.75rem 1rem 0.5rem;
+			margin: 0 0 1.5rem;
 		} /* .hash */
 
 		&__title {
 			@extend .display-title;
 
 			font-size: 2.25rem;
+			margin: 0 0 2rem;
 		} /* __title */
+
+		&__btns {
+			display: flex;
+			gap: 1.5rem;
+			margin: 2rem 0 0;
+
+			.download {
+				align-items: center;
+				background: none;
+				border: none;
+				cursor: pointer;
+				display: flex;
+				font-family: $main-font-bold;
+				font-weight: bold;
+				height: 2.5rem;
+				transition: 0.3s;
+
+				&:hover {
+					opacity: 0.7;
+				}
+			} /* .download */
+		} /* __btns */
+
+		&__slider {
+			width: 50%;
+
+			.experts-subtitle {
+				font-family: $main-font-bold;
+				font-size: 1.5rem;
+				font-style: italic;
+				font-weight: bold;
+				margin: 0 0 1.5rem;
+			}
+		} /* __slider */
 	} /* .experts */
 } /* .experts-section */

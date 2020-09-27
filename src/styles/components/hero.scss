@@ -1,20 +1,20 @@
 .hero-section {
 	background: $secondary-color;
 	height: 600px;
-	height: clamp(600px, 70vh, 900px);
+	height: clamp(550px, calc(70vh - 100px), 900px);
 
 	.hero {
 		background: url('../images/coderhouse-hero-illus.svg') no-repeat right center / contain;
 		display: flex;
 		height: 100%;
-		padding: 2rem 1rem;
+		padding: 0 1rem 2rem;
 		margin: 0 auto;
 		max-width: $max-width;
 		width: 100%;
 
 		&__content {
 			margin: auto auto auto 0;
-			width: 60%;
+			width: 55%;
 
 			@include tablet {
 				display: flex;
@@ -28,12 +28,13 @@
 			@extend .heading-text;
 
 			font-size: 3rem;
-			font-size: clamp(2rem, 5vw, 3.25rem);
+			font-size: clamp(1.75rem, 5vw, 3rem);
 		} /* __title */
 
 		&__lead {
 			margin: 0 0 1.5rem;
-			font-size: 1.75rem;
+			font-size: 1.5rem;
+			line-height: 1.2;
 
 			@include tablet {
 				font-size: 1.25rem;

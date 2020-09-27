@@ -1,23 +1,8 @@
-const ExpertsSliderController = async ($scope, $http) => {
-	$scope.experts = [
-		'Includes',
-		'Routes',
-		'HTML Webpack Plugin',
-		'Sass support',
-		'Custom Materialize colors',
-		'Images loader',
-		'Custom Web Fonts',
-	]
+const ExpertsSliderController = ($scope, $rootScope) => {
+	$scope.experts = $rootScope.product.experts
+	//$scope.$digest()
 
-	try {
-		// this should come from db/api
-		const { data } = await $http.get('data/product.json')
-		console.log(data)
-	} catch (error) {
-		console.error('no product')
-	}
-
-	console.log(experts)
+	console.log('experts', $scope.experts)
 }
 
 const ExpertsSliderComponent = {

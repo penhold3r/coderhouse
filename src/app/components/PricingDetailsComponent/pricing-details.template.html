@@ -1,0 +1,66 @@
+<div class="pricing__lead" ng-transclude></div>
+
+<div class="pricing__plans">
+	<div ng-repeat="plan in pricing" class="plan-card" ng-class="{featured: plan.featured}">
+		<h3 class="plan-card__title">{{plan.name}}</h3>
+
+		<div class="plan-card__price">
+			<p>
+				<span class="value">{{plan.price | currency:"$ ":0}}</span>
+				<span
+					class="currency"
+					style="background-image: url({{flags[plan.currency]}});"
+					title="{{plan.currency}}"
+				>
+				</span>
+			</p>
+			<p class="monthly-fee">
+				<span ng-show="plan.monthlyFee">{{plan.monthlyFee}}</span>
+				<span ng-hide="plan.monthlyFee">Precio final</span>
+			</p>
+		</div>
+
+		<button class="button--primary" ng-show="plan.featured">Elegir</button>
+		<button class="button" ng-hide="plan.featured">Elegir</button>
+
+		<div class="plan-card__checks">
+			<h3>Requisitos</h3>
+			<ul>
+				<li ng-repeat="requirement in requirements">
+					<i
+						ng-show="plan.requirements.includes(requirement)"
+						class="icon ri-checkbox-circle-fill"
+					></i>
+					<i
+						ng-hide="plan.requirements.includes(requirement)"
+						class="icon not ri-close-circle-fill"
+					></i>
+				</li>
+			</ul>
+			<h3>Beneficios</h3>
+			<ul>
+				<li ng-repeat="benefit in benefits">
+					<i
+						ng-show="plan.benefits.includes(benefit)"
+						class="icon ri-checkbox-circle-fill"
+					></i>
+					<i
+						ng-hide="plan.benefits.includes(benefit)"
+						class="icon not ri-close-circle-fill"
+					></i>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class="pricing__list">
+	<h3>Requisitos</h3>
+	<ul>
+		<li ng-repeat="requirement in requirements">{{requirement}}</li>
+	</ul>
+	<h3>Beneficios</h3>
+	<ul>
+		<li ng-repeat="benefit in benefits">{{benefit}}</li>
+	</ul>
+</div>

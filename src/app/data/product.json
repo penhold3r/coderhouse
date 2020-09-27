@@ -5,9 +5,70 @@
 		{
 			"id": 1,
 			"name": "Leanne Graham",
+			"position": "UX Developer",
+			"companyLogo": "https://ucarecdn.com/608b73c5-0b3c-43ae-8d44-7fe910eb5e25/-/resize/64x/-/quality/normal/-/progressive/yes/",
+			"profilePicture": "https://source.unsplash.com/IF9TK5Uy-KI/500x700"
+		},
+		{
+			"id": 2,
+			"name": "Leandro Uriarte",
+			"position": "UI Designer",
+			"companyLogo": "https://ucarecdn.com/e26d1e72-591d-40f8-95b8-2ef9a4235241/-/resize/60x/",
+			"profilePicture": "https://source.unsplash.com/NohB3FJSY90/500x700"
+		},
+		{
+			"id": 3,
+			"name": "Marcos García",
+			"position": "Product Designer",
+			"companyLogo": "https://ucarecdn.com/608b73c5-0b3c-43ae-8d44-7fe910eb5e25/-/resize/60x/",
+			"profilePicture": "https://source.unsplash.com/8PMvB4VyVXA/500x700"
+		},
+		{
+			"id": 4,
+			"name": "Romina Andrade",
+			"position": "Diseñadora UI",
+			"companyLogo": "https://ucarecdn.com/8c663f72-cc8d-4ff7-9f6a-408960f70004/-/resize/60x/",
+			"profilePicture": "https://source.unsplash.com/Zz5LQe-VSMY/500x700"
+		},
+		{
+			"id": 5,
+			"name": "Gastón Miranda",
 			"position": "UX Designer",
-			"companyLogo": "",
-			"profilePicture": ""
+			"companyLogo": "https://ucarecdn.com/d38890a7-f965-4173-b805-0105ba709ad7/-/resize/60x/",
+			"profilePicture": "https://source.unsplash.com/RiDxDgHg7pw/500x700"
+		}
+	],
+	"pricing": [
+		{
+			"name": "CoderBECA",
+			"price": 9450,
+			"currency": "ARS",
+			"featured": true,
+			"monthlyFee": "6 cuotas sin interés de $ 1.575",
+			"requirements": ["85% asistencia en vivo", "Entregar desafíos en tiempo y forma"],
+			"benefits": [
+				"Clases online en vivo",
+				"Desafíos y proyecto final",
+				"2 clases de prueba",
+				"Acceso a bolsa laboral y proyectos freelance pagos",
+				"Grabación de las clases"
+			]
+		},
+		{
+			"name": "CODER",
+			"price": 31500,
+			"currency": "ARS",
+			"featured": false,
+			"monthlyFee": null,
+			"requirements": ["85% asistencia en vivo", "Entregar desafíos en tiempo y forma"],
+			"benefits": [
+				"Clases online en vivo",
+				"Desafíos y proyecto final",
+				"2 clases de prueba",
+				"Acceso a bolsa laboral y proyectos freelance pagos",
+				"Grabación de las clases",
+				"Aprende a tu ritmo"
+			]
 		}
 	]
 }
