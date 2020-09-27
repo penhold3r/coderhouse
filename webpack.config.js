@@ -41,10 +41,10 @@ const views = viewsFiles.map(
 
 //
 module.exports = {
-	entry: ['./src/app/App.js'],
+	entry: path.join(__dirname, 'src/app/App.js'),
 	output: {
 		filename: 'js/bundle.js',
-		path: path.resolve(__dirname, 'public'),
+		path: path.join(__dirname, 'public'),
 		publicPath: '/',
 	},
 	module: {
@@ -52,7 +52,7 @@ module.exports = {
 			{
 				test: /\.js$/,
 				loader: 'babel-loader',
-				include: path.resolve(__dirname, './app'),
+				include: path.join(__dirname, './app'),
 				exclude: /node_modules/,
 			},
 			{
@@ -129,7 +129,7 @@ module.exports = {
 			template: './src/index.html',
 		}),
 		new CopyPlugin({
-			patterns: [{ from: 'src/app/data', to: './data' }],
+			patterns: [{ from: path.join(__dirname, 'src/app/data'), to: 'data' }],
 			options: {
 				concurrency: 100,
 			},
