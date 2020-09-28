@@ -20,6 +20,13 @@
 				'text       plans'
 				'details    plans';
 			grid-template-columns: 1fr 1fr;
+
+			@include phone {
+				grid-template-areas:
+					'text'
+					'plans';
+				grid-template-columns: 1fr;
+			}
 		} /* __content */
 
 		&__lead {
@@ -30,16 +37,20 @@
 			strong {
 				font-family: $main-font-bold;
 			}
-		} /* __lead */
 
-		&__list {
-			grid-area: details;
-		} /* __list */
+			@include tablet {
+				font-size: 1rem;
+			}
+		} /* __lead */
 
 		&__plans {
 			display: flex;
 			gap: 1.5rem;
 			grid-area: plans;
+
+			@include tablet {
+				gap: 1rem;
+			}
 
 			.plan-card {
 				align-items: center;
@@ -58,11 +69,16 @@
 					font-family: $main-font-bold;
 					text-align: center;
 					margin: 0 0 1rem;
+
+					@include tablet {
+						font-size: 1.25rem;
+					}
 				} /* __title */
 
 				&__price {
 					text-align: center;
 					margin: 0 0 2rem;
+					flex-grow: 1;
 
 					p:first-child {
 						align-items: center;
@@ -76,11 +92,20 @@
 							height: 20px;
 							margin-right: 1.25rem;
 							width: 3px;
+
+							@include tablet {
+								content: none;
+							}
 						}
 
 						.value {
 							font-size: 2.25rem;
 							font-family: $main-font-bold;
+							white-space: nowrap;
+
+							@include tablet {
+								font-size: 1.75rem;
+							}
 						} /* .value */
 
 						.currency {
@@ -90,6 +115,10 @@
 							height: 20px;
 							margin-left: 1.25rem;
 							width: 20px;
+
+							@include tablet {
+								margin-left: 1rem;
+							}
 						} /* .currency */
 					}
 
@@ -107,6 +136,10 @@
 					justify-content: flex-end;
 					width: 100%;
 
+					@include phone {
+						margin-top: 2rem;
+					}
+
 					h3 {
 						border-bottom: 1px solid $accent-color;
 						font-size: 1.25rem;
@@ -119,6 +152,11 @@
 						height: 3rem;
 						display: flex;
 						align-items: center;
+
+						@include phone {
+							color: $dark;
+							font-size: 1rem;
+						}
 					}
 					ul {
 						list-style: none;
@@ -126,17 +164,41 @@
 						padding: 0;
 
 						li {
+							align-items: center;
 							border-bottom: 1px solid $accent-color;
-							font-size: 1.25rem;
-							margin: 0;
-							height: 3rem;
 							display: flex;
+							font-size: 1.25rem;
+							height: 3rem;
 							justify-content: center;
+							margin: 0;
 							text-align: center;
+
+							&.not {
+								@include phone {
+									display: none;
+								}
+							}
+
+							@include phone {
+								justify-content: flex-start;
+								height: auto;
+								padding: 0.25rem 0;
+
+								&:after {
+									content: attr(data-text);
+									font-size: 0.8rem;
+									line-height: 1.1;
+									text-align: left;
+								}
+							}
 
 							.icon {
 								color: $accent-color;
 								margin: auto;
+
+								@include phone {
+									margin: auto 1rem auto 0;
+								}
 
 								&.not {
 									color: $dark;
@@ -150,7 +212,15 @@
 		} /* __plans */
 
 		&__list {
+			display: flex;
+			flex-direction: column;
+			grid-area: details;
+			justify-content: flex-end;
 			padding: 0 1.5rem 2rem 0;
+
+			@include phone {
+				display: none;
+			}
 
 			h3 {
 				border-bottom: 1px solid $accent-color;
@@ -175,6 +245,11 @@
 					height: 3rem;
 					display: flex;
 					align-items: center;
+
+					@include tablet {
+						font-size: 1rem;
+						line-height: 1.2;
+					}
 				}
 			}
 		} /* __list */

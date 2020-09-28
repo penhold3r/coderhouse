@@ -26,7 +26,11 @@
 		<div class="plan-card__checks">
 			<h3>Requisitos</h3>
 			<ul>
-				<li ng-repeat="requirement in requirements">
+				<li
+					ng-repeat="requirement in requirements"
+					data-text="{{requirement}}"
+					ng-class="{not: !plan.requirements.includes(requirement)}"
+				>
 					<i
 						ng-show="plan.requirements.includes(requirement)"
 						class="icon ri-checkbox-circle-fill"
@@ -39,7 +43,11 @@
 			</ul>
 			<h3>Beneficios</h3>
 			<ul>
-				<li ng-repeat="benefit in benefits">
+				<li
+					ng-repeat="benefit in benefits"
+					data-text="{{benefit}}"
+					ng-class="{not: !plan.benefits.includes(benefit)}"
+				>
 					<i
 						ng-show="plan.benefits.includes(benefit)"
 						class="icon ri-checkbox-circle-fill"

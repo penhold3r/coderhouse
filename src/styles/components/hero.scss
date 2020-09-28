@@ -3,14 +3,22 @@
 	height: 600px;
 	height: clamp(550px, calc(70vh - 100px), 900px);
 
+	@include tablet {
+		height: auto;
+	}
+
 	.hero {
 		background: url('../images/coderhouse-hero-illus.svg') no-repeat right center / contain;
 		display: flex;
 		height: 100%;
-		padding: 0 1rem 2rem;
+		padding: 2rem 1rem 4rem;
 		margin: 0 auto;
 		max-width: $max-width;
 		width: 100%;
+
+		@include tablet {
+			background-position: center;
+		}
 
 		&__content {
 			margin: auto auto auto 0;

@@ -11,6 +11,10 @@
 		transform: translateY(-50%);
 		width: 90%;
 
+		@include tablet {
+			padding: 1rem;
+		}
+
 		.info-detail {
 			align-items: center;
 			display: flex;
@@ -28,6 +32,12 @@
 				color: $dark;
 				font-size: 1.25rem;
 				margin: 0;
+				text-align: center;
+
+				@include tablet {
+					font-size: 1rem;
+					margin: auto;
+				}
 			}
 		} /* .info-detail */
 	} /* .product-info */
