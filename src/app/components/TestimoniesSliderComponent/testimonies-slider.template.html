@@ -1,0 +1,27 @@
+<div class="slider-container">
+	<div class="slider-carrier">
+		<div class="slider-card" ng-repeat="card in testimonies">
+			<div class="slider-card__text">
+				<p>{{card.text}}</p>
+			</div>
+			<div class="slider-card__author">
+				<div class="avatar">
+					<img ng-src="{{card.profilePicture}}" alt="" />
+				</div>
+				<div class="data">
+					<p class="name">{{card.name}}</p>
+					<p class="position">{{card.position}}</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="slider-controls">
+	<button class="control-btn prev" ng-click="prev()">
+		<i class="icon ri-arrow-left-s-line"></i>
+	</button>
+	<button class="control-btn next" ng-click="next()">
+		<i class="icon ri-arrow-right-s-line"></i>
+	</button>
+</div>

@@ -5,6 +5,10 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta name="description" content="{{description}}" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+			rel="stylesheet"
+		/>
 		<title>{{title}}</title>
 	</head>
 
@@ -12,5 +16,7 @@
 		<main-header></main-header>
 
 		<main class="content" ng-view></main>
+
+		<footer class="site-footer" ng-include="'./includes/footer.html'"></footer>
 	</body>
 </html>

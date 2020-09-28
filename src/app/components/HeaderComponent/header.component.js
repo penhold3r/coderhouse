@@ -1,6 +1,6 @@
 import logo from '../../../images/coderhouse-logo.svg'
 
-const HeaderController = $scope => {
+function HeaderController($scope) {
 	$scope.brand = logo
 
 	$scope.links = [
@@ -17,6 +17,11 @@ const HeaderController = $scope => {
 			url: '#',
 		},
 	]
+
+	$scope.closeBanner = $event => {
+		const banner = $event.currentTarget.closest('.promo-banner')
+		banner.classList.add('closed')
+	}
 }
 
 const HeaderComponent = {

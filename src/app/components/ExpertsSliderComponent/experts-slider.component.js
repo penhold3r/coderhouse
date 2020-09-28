@@ -1,8 +1,10 @@
-const ExpertsSliderController = ($scope, $rootScope) => {
+function ExpertsSliderController($scope, $rootScope, $element) {
+	const ctrl = this
 	$scope.experts = $rootScope.product.experts
-	//$scope.$digest()
 
-	console.log('experts', $scope.experts)
+	ctrl.$postLink = function () {
+		// TO DO
+	}
 }
 
 const ExpertsSliderComponent = {

@@ -43,8 +43,8 @@ module.exports = {
 	entry: path.join(__dirname, 'src/app/App.js'),
 	output: {
 		filename: 'js/bundle.js',
-		path: path.join(__dirname, 'public'),
-		publicPath: '/',
+		path: path.resolve(__dirname, './public/'),
+		publicPath: './',
 	},
 	module: {
 		rules: [
@@ -139,6 +139,7 @@ module.exports = {
 				{ from: path.join(__dirname, 'src/app/views'), to: 'views' },
 				{ from: path.join(__dirname, 'src/app/includes'), to: 'includes' },
 				{ from: path.join(__dirname, 'src/app/data'), to: 'data' },
+				{ from: path.join(__dirname, 'src/images'), to: 'images' },
 			],
 			options: {
 				concurrency: 100,

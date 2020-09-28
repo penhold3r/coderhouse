@@ -70,5 +70,156 @@
 				"Aprende a tu ritmo"
 			]
 		}
+	],
+	"dates": [
+		{
+			"month": "Septiembre",
+			"classes": [
+				{
+					"date": "06/10 al 29/12",
+					"days": "Martes y Jueves",
+					"hours": "de 10:00 a 12:00",
+					"quota": 20,
+					"filled": 11
+				},
+				{
+					"date": "06/10 al 29/12",
+					"days": "Martes y Jueves",
+					"hours": "de 10:00 a 12:00",
+					"quota": 20,
+					"filled": 8
+				},
+				{
+					"date": "06/10 al 29/12",
+					"days": "Martes y Jueves",
+					"hours": "de 10:00 a 12:00",
+					"quota": 20,
+					"filled": 12
+				},
+				{
+					"date": "06/10 al 29/12",
+					"days": "Martes y Jueves",
+					"hours": "de 10:00 a 12:00",
+					"quota": 20,
+					"filled": 5
+				}
+			]
+		},
+		{
+			"month": "Octubre",
+			"classes": [
+				{
+					"date": "06/10 al 29/12",
+					"days": "Martes y Jueves",
+					"hours": "de 10:00 a 12:00",
+					"quota": 20,
+					"filled": 11
+				},
+				{
+					"date": "06/10 al 29/12",
+					"days": "Martes y Jueves",
+					"hours": "de 10:00 a 12:00",
+					"quota": 20,
+					"filled": 0
+				},
+				{
+					"date": "06/10 al 29/12",
+					"days": "Martes y Jueves",
+					"hours": "de 10:00 a 12:00",
+					"quota": 20,
+					"filled": 0
+				},
+				{
+					"date": "06/10 al 29/12",
+					"days": "Martes y Jueves",
+					"hours": "de 10:00 a 12:00",
+					"quota": 20,
+					"filled": 0
+				}
+			]
+		},
+		{
+			"month": "Noviembre",
+			"classes": [
+				{
+					"date": "06/10 al 29/12",
+					"days": "Martes y Jueves",
+					"hours": "de 10:00 a 12:00",
+					"quota": 20,
+					"filled": 11
+				},
+				{
+					"date": "06/10 al 29/12",
+					"days": "Martes y Jueves",
+					"hours": "de 10:00 a 12:00",
+					"quota": 20,
+					"filled": 8
+				},
+				{
+					"date": "06/10 al 29/12",
+					"days": "Martes y Jueves",
+					"hours": "de 10:00 a 12:00",
+					"quota": 20,
+					"filled": 12
+				}
+			]
+		},
+		{
+			"month": "Diciembre",
+			"classes": [
+				{
+					"date": "06/10 al 29/12",
+					"days": "Martes y Jueves",
+					"hours": "de 10:00 a 12:00",
+					"quota": 20,
+					"filled": 0
+				}
+			]
+		},
+		{
+			"month": "Enero",
+			"classes": [
+				{
+					"date": "06/10 al 29/12",
+					"days": "Martes y Jueves",
+					"hours": "de 10:00 a 12:00",
+					"quota": 20,
+					"filled": 0
+				},
+				{
+					"date": "06/10 al 29/12",
+					"days": "Martes y Jueves",
+					"hours": "de 10:00 a 12:00",
+					"quota": 20,
+					"filled": 0
+				}
+			]
+		}
+	],
+	"testimonies": [
+		{
+			"name": "Leanne Graham",
+			"position": "UX Developer",
+			"profilePicture": "https://source.unsplash.com/IF9TK5Uy-KI/500x700",
+			"text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius neque, error laborum sint rerum aperiam."
+		},
+		{
+			"name": "Leandro Uriarte",
+			"position": "UI Designer",
+			"profilePicture": "https://source.unsplash.com/NohB3FJSY90/500x700",
+			"text": "Pariatur, perferendis. Ullam odio minus amet. Recusandae saepe quo quod quibusdam hic ullam!"
+		},
+		{
+			"name": "Marcos García",
+			"position": "Product Designer",
+			"profilePicture": "https://source.unsplash.com/8PMvB4VyVXA/500x700",
+			"text": "Autem eaque eius numquam sequi debitis id tempore iste dicta ducimus et voluptatem delectus nihil, illum corrupti culpa laborum vel."
+		},
+		{
+			"name": "Gastón Miranda",
+			"position": "UX Designer",
+			"profilePicture": "https://source.unsplash.com/RiDxDgHg7pw/500x700",
+			"text": "Itaque sit consectetur sint veritatis doloremque, illum commodi a! Facilis saepe est temporibus tempore, libero eveniet ullam, repellat quis fugiat culpa porro eos nisi sit id dolorem eius."
+		}
 	]
 }

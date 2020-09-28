@@ -1,23 +1,22 @@
-const AppController = [
-	'$scope',
-	'$rootScope',
-	'$http',
-	async ($scope, $rootScope, $http) => {
-		$scope.lang = 'es'
-		$scope.title = 'CoderHouse'
+async function appController($scope, $rootScope, $http) {
+	$scope.lang = 'es'
+	$scope.title = 'CoderHouse'
 
-		try {
-			// this should come from db/api
-			const { data } = await $http.get('data/product.json')
+	$scope.paymentMethods = ['visa', 'mastercard', 'american-express', 'deposit']
 
-			$scope.description = data.description
-			$rootScope.product = data
-		} catch (error) {
-			console.error('no product')
-		}
+	try {
+		// this should come from db/api
+		const { data } = await $http.get('data/product.json')
 
-		console.log('App works!')
-	},
-]
+		$scope.description = data.description
+		$rootScope.product = data
+	} catch (error) {
+		console.error('no product')
+	}
+
+	console.log('App works!')
+}
+
+const AppController = ['$scope', '$rootScope', '$http', appController]
 
 export default AppController

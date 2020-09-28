@@ -8,6 +8,11 @@
 /******************************************************
 *                  GLOBAL STYLES
 ******************************************************/
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
 
 html,
 body {
@@ -26,6 +31,10 @@ body {
 	font-family: $main-font;
 	font-weight: 200;
 	line-height: 1.5;
+
+	main.content {
+		overflow-x: hidden;
+	}
 } // body
 
 .bottom-texture {

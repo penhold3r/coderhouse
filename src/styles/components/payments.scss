@@ -1,0 +1,49 @@
+.payments-section {
+	background: $accent-color;
+	padding: 3rem 1rem;
+
+	.payments {
+		align-items: center;
+		display: flex;
+		justify-content: center;
+		margin: 0 auto;
+		max-width: $max-width;
+
+		@include tablet {
+			flex-direction: column;
+		}
+
+		&__title {
+			@extend .display-title;
+
+			font-size: 2.25rem;
+			font-size: clamp(1.75rem, 5vw, 2.25rem);
+			margin: 0;
+			padding: 2rem 0;
+			width: 50%;
+
+			@include tablet {
+				text-align: center;
+				width: 100%;
+			}
+		} /* __title */
+
+		&__icons {
+			display: flex;
+			gap: 1.5rem;
+			justify-content: center;
+			width: 50%;
+
+			@include tablet {
+				width: 100%;
+			}
+
+			.icon {
+				background-repeat: no-repeat;
+				background-size: contain;
+				height: 60px;
+				width: 60px;
+			} /* .icon */
+		} /* __icons */
+	} /* .payments */
+} /* .payments-section */
