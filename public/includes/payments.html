@@ -1,0 +1,14 @@
+<div class="payments">
+	<h3 class="payments__title">
+		Pagá con tarjeta de crédito, débito, transferencia o depósito bancario
+	</h3>
+
+	<div class="payments__icons">
+		<i
+			ng-repeat="icon in paymentMethods"
+			class="icon payment-method"
+			style="background-image: url(./images/{{icon}}-icon.svg);"
+			title="{{icon}}"
+		></i>
+	</div>
+</div>
