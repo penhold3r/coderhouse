@@ -46,6 +46,7 @@
 	"dependencies": {
 		"angular": "^1.8.0",
 		"angular-route": "^1.7.2",
+		"babel-plugin-angularjs-annotate": "^0.10.0",
 		"clean-webpack-plugin": "^3.0.0",
 		"copy-webpack-plugin": "^6.1.1",
 		"remixicon": "^2.5.0"
