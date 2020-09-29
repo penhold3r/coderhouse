@@ -1,5 +1,5 @@
 const path = require('path')
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
+const TerserPlugin = require('terser-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const globSassImporter = require('node-sass-glob-importer')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
@@ -13,9 +13,10 @@ module.exports = {
 		publicPath: './',
 	},
 	optimization: {
+		minimize: true,
 		minimizer: [
-			new UglifyJsPlugin({
-				uglifyOptions: {
+			new TerserPlugin({
+				terserOptions: {
 					mangle: false,
 					keep_fnames: true,
 				},
