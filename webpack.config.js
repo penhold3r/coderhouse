@@ -13,11 +13,12 @@ module.exports = {
 		publicPath: './',
 	},
 	optimization: {
-		minimize: false, // angular doesn't like uglify.
 		minimizer: [
 			new UglifyJsPlugin({
-				keep_fnames: true,
-				mangle: false,
+				uglifyOptions: {
+					mangle: false,
+					keep_fnames: true,
+				},
 			}),
 		],
 	},
