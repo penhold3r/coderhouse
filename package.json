@@ -49,6 +49,7 @@
 		"babel-plugin-angularjs-annotate": "^0.10.0",
 		"clean-webpack-plugin": "^3.0.0",
 		"copy-webpack-plugin": "^6.1.1",
-		"remixicon": "^2.5.0"
+		"remixicon": "^2.5.0",
+		"uglifyjs-webpack-plugin": "^2.2.0"
 	}
 }

@@ -1,4 +1,5 @@
 const path = require('path')
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const globSassImporter = require('node-sass-glob-importer')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
@@ -13,6 +14,12 @@ module.exports = {
 	},
 	optimization: {
 		minimize: false, // angular doesn't like uglify.
+		minimizer: [
+			new UglifyJsPlugin({
+				keep_fnames: true,
+				mangle: false,
+			}),
+		],
 	},
 	module: {
 		rules: [
